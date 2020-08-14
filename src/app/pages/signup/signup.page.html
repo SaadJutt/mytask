@@ -1,28 +1,50 @@
 <ion-header>
-  <ion-toolbar color='primary'>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-    <ion-title>signup</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title color="tertiary" class='ion-text-center'>Sign Up</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding ion-text-center">
 
-      <ion-item class="ion-margin-bottom">
-        <ion-input class="ion-input" type="text" placeholder="Email" [(ngModel)]="email"></ion-input>
-      </ion-item>
-  
+    <ion-text color="light">
+        <p class="ion-padding fontsizer">
+            Warmming Turns Sharing Fun Photos and Videos With Your Friends Into a Game
+        </p>
+    </ion-text>
+    <ion-item class="ion-margin-bottom ion-no-padding">
+        <ion-input class="ion-input " type="text" placeholder="First Name"></ion-input>
+    </ion-item>
 
+    <ion-item class="ion-margin-bottom ion-no-padding">
+        <ion-input type="text" placeholder="Last Name"></ion-input>
+    </ion-item>
 
-      <ion-item class="ion-margin-bottom">
-        <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
-      </ion-item>
+    <ion-item class="ion-margin-bottom ion-no-padding">
+        <ion-input class="ion-input " type="email" placeholder="Email"></ion-input>
+    </ion-item>
 
+    <ion-item class="ion-margin-bottom ion-no-padding">
+        <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
 
-
-  <div>
-    <ion-button expand="full" class="ion-button" (click)="signup()">Sign up</ion-button>
-  </div>
+    <p class="ion-padding fontsizer">
+        By continuing you agreeto the Warmmer <br/>
+        <ion-text color="primary"><a href="#">Terms of Services</a></ion-text> and
+        <ion-text color="primary"> <a href="#">Privacy Policy</a></ion-text>
+    </p>
 
 </ion-content>
+
+<ion-foorter class="ion-padding">
+    <ion-row>
+        <ion-col>
+            <ion-button color="tertiary" expand="block" class="bordeerradius"> Back </ion-button>
+        </ion-col>
+        <ion-col>
+            <ion-button color="tertiary" expand="block" fill="outline" class="bordeerradius"> Next </ion-button>
+        </ion-col>
+    </ion-row>
+</ion-foorter>
